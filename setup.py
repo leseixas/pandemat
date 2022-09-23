@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # file: setup.py
 
-# This code is part of HEntropy
+# This code is part of Pandemonium
 #
 # Copyright (c) 2022 Leandro Seixas Rocha.
 #
@@ -18,22 +18,22 @@
 #   limitations under the License.
 
 from setuptools import setup, find_packages
-# from .hentropy.__init__ import version
+# from .pandemonium.__init__ import version
 
 # Read in requirements.txt
 requirements = open('requirements.txt').readlines()
 requirements = [r.strip() for r in requirements]
 
 setup(
-    name = "hentropy",
+    name = "pandemonium",
     version = "0.0.1",
     packages = find_packages(),
     author = "Leandro Seixas",
     author_email = "leandro.seixas@mackenzie.br", 
-    url="https://macksim.org/hentropy",
-    description = "(Under development). HEntropy is a tool for high-entropy materials calculations and data analysis.",
+    url="https://macksim.org/pandemonium",
+    description = "(Under development). Pandemonium is a tool for high-entropy materials calculations and data analysis.",
     long_description='''
-    (Under development). HEntropy is a tool for high-entropy materials calculations and data analysis.
+    (Under development). Pandemonium is a tool for high-entropy materials calculations and data analysis.
     ''',
     install_requires = requirements,
     license = 'Apache 2',
