@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # file: setup.py
 
-# This code is part of Pandemonium
+# This code is part of Pandemat
 #
 # Copyright (c) 2022 Leandro Seixas Rocha.
 #
@@ -18,22 +18,22 @@
 #   limitations under the License.
 
 from setuptools import setup, find_packages
-# from .pandemonium.__init__ import version
+# from .pandemat.__init__ import version
 
 # Read in requirements.txt
 requirements = open('requirements.txt').readlines()
 requirements = [r.strip() for r in requirements]
 
 setup(
-    name = "pandemonium",
+    name = "pandemat",
     version = "0.0.1",
     packages = find_packages(),
     author = "Leandro Seixas",
     author_email = "leandro.seixas@mackenzie.br", 
-    url="https://macksim.org/pandemonium",
-    description = "(Under development). Pandemonium is a tool for high-entropy materials calculations and data analysis.",
+    url="https://macksim.org/pandemat",
+    description = "(Under development). Pandemat is a tool for high-entropy materials calculations and data analysis.",
     long_description='''
-    (Under development). Pandemonium is a tool for high-entropy materials calculations and data analysis.
+    (Under development). Pandemat is a tool for high-entropy materials calculations and data analysis.
     ''',
     install_requires = requirements,
     license = 'Apache 2',
